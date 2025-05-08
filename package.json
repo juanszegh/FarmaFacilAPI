@@ -1,0 +1,32 @@
+{
+  "name": "primeiraapi",
+  "version": "1.0.0",
+  "description": "API de Farmácia que utiliza de web scrapping para fazer comparaçôes de produtos entre farmácias.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "start:dev": "nodemon"
+  },
+  "keywords": [
+    "primeira",
+    "api"
+  ],
+  "author": "Lucas Honorato Ferreira, Juan Arce e Juan Tavares",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv-safe": "^9.1.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "puppeteer": "^24.8.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  }
+}
