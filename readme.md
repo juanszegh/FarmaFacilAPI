@@ -1,7 +1,7 @@
 # Farma Fácil
 ### A farmácia ideal a poucos cliques de você.
 ### Desenvolvida por: Juan Arce Anastácio, Juan Tavares Szegh Ferreira e Lucas Honorato Ferreira
-#### ETEC Aristóteles Ferreira 3º Ano do Ensino Médio Integrado a Habilitação de Desenvolvimento de Sistemas
+#### ETEC Aristóteles Ferreira. 3º Ano do Ensino Médio Integrado a Habilitação de Técnico em Desenvolvimento de Sistemas
 
 Swagger: https://app.swaggerhub.com/apis/etecaf/farma-facil/1.0.0
 Postman: https://app.getpostman.com/join-team?invite_code=04471de5ada26da14a9d162a68d1472791462ee37d8028f0e7fef9c235277584&target_code=cd4478c30148d9fec73ba64d01dd406b
