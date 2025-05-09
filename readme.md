@@ -11,12 +11,12 @@ Video: https://youtu.be/JJw-FKPhIgM
 A Farma fácil é uma API pensada com o propósito de auxiliar na busca de produtos farmacêuticos, pois segundo o PROCON, remédios podem ser encontrados com uma diferença no seu valor de até 300% dependendo da farmácia.
 
 ### Nossa solução para isso
-Com esse problema encontrado resolvemos utilizar uma tecnologia chamada “Web Scraping” que consiste em buscar dados de uma página da Web através de um seletor HTML. Desta forma podemos buscar pelo produto desejado pelo usuário e achar seu valor em diferentes farmácias que podem ser filtradas a partir da escolha dele, elas são: 
-- Consultar um farmácia 
-- Várias
-- Todas
+Com esse problema encontrado resolvemos utilizar uma tecnologia chamada “Web Scraping” que consiste em buscar dados de uma página da Web através de um seletor HTML. A escolha pelo "Web Scraping" é justificada pela necessidade de dados reais que atualizem de acordo com os valores disponíveis no website da farmácia. Portanto, se guardássemos os produtos no banco de dados, a nossa API deixaria de funcionar de maneira dinâmica, e exigiria novas inserções e atualizações para cada mudança no site. Portanto, utilizar da tecnologia de raspagem da web, faz com que consigamos lidar com dados que sempre estarão condizentes com o valor atualizado da farmácia. Desta forma, podemos buscar pelo produto desejado pelo usuário e achar seu valor em diferentes farmácias que podem ser filtradas a partir da escolha dele, elas são: 
+- Consultar uma farmácia específica;
+- Consultar mais de uma farmácia específica;
+- Todas as farmácias inseridas no banco de dados.
 
-Sem contar a filtragem de menor ou maior valor, ou seja, dados reais em tempo real, tudo em lugar só, facilitando assim a compra do usuário.
+Sem contar a filtragem de menor ou maior valor, ou seja, dados reais em tempo real, tudo em lugar só, facilitando assim a escolha do usuário.
 
 ### Como utilizar a API Farma Fácil 
 
