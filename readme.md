@@ -3,9 +3,9 @@
 ### Desenvolvida por: Juan Arce Anastácio, Juan Tavares Szegh Ferreira e Lucas Honorato Ferreira
 #### ETEC Aristóteles Ferreira. 3º Ano do Ensino Médio Integrado a Habilitação de Técnico em Desenvolvimento de Sistemas
 
-Swagger: https://app.swaggerhub.com/apis/etecaf/farma-facil/1.0.0
-Postman: https://app.getpostman.com/join-team?invite_code=04471de5ada26da14a9d162a68d1472791462ee37d8028f0e7fef9c235277584&target_code=cd4478c30148d9fec73ba64d01dd406b
-Video: https://youtu.be/JJw-FKPhIgM
+Swagger: https://app.swaggerhub.com/apis/etecaf/farma-facil/1.0.0  
+Postman: https://app.getpostman.com/join-team?invite_code=04471de5ada26da14a9d162a68d1472791462ee37d8028f0e7fef9c235277584&target_code=cd4478c30148d9fec73ba64d01dd406b  
+Video: https://youtu.be/JJw-FKPhIgM  
 
 ### Oque é a Farma Facil?
 A Farma fácil é uma API pensada com o propósito de auxiliar na busca de produtos farmacêuticos, pois segundo o PROCON, remédios podem ser encontrados com uma diferença no seu valor de até 300% dependendo da farmácia.
@@ -24,6 +24,7 @@ Obs: Antes de inicializar o programa,
 é necessário executar o comando: 
 ```console
 @puppeteer/browsers install chrome
+node .
 ```
 no terminal para que o Web Scraping consiga utilizar do navegador para fazer a busca. Também tome cuidado na hora de colocar o valor da chave ordem para buscar, afetará o funcionamento.
 
