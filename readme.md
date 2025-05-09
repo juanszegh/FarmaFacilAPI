@@ -24,9 +24,13 @@ Obs: Antes de inicializar o programa,
 é necessário executar o comando: 
 ```console
 @puppeteer/browsers install chrome
+```
+Para que o Web Scraping consiga utilizar do navegador chrome para fazer a busca. 
+Em seguida, basta rodar com o comando:
+```console
 node .
 ```
-no terminal para que o Web Scraping consiga utilizar do navegador para fazer a busca. Também tome cuidado na hora de colocar o valor da chave ordem para buscar, afetará o funcionamento.
+Também tome cuidado na hora de colocar o valor da chave "ordem" para buscar, pois isso afetará o funcionamento.
 
 ## 📦 Buscar Produtos (GET)
 
