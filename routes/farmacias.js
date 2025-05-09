@@ -26,15 +26,17 @@ function validarAtributo(att, farmacia)
     return att === "#" ? farmacia.nm_farmacia : att
 }
 
-router.post('/editar_farmacia/:cd_farmacia/:nm_farmacia/:seletor_preco/:seletor_nome_produto',verificarJWT,async(req, res, next)=> {
+router.post('/editar_farmacia/:cd_farmacia/:nm_farmacia/:seletor_preco/:seletor_nome_produto/:seletor_link',verificarJWT,async(req, res, next)=> {
     try
     {
         const farmacia = await funcoesBanco.Farmacia.findOne({where : {cd_farmacia: Number(req.params.cd_farmacia)}})
         await farmacia.set({
             nm_farmacia: await validarAtributo(req.params.nm_farmacia, farmacia),
             url: await validarAtributo(req.body.url, farmacia),
+            url_puro: await validarAtributo(req.body.url_puro, farmacia),
             seletor_preco: await validarAtributo(req.params.seletor_preco, farmacia),
-            seletor_nome_produto: await validarAtributo(req.params.seletor_nome_produto, farmacia)
+            seletor_nome_produto: await validarAtributo(req.params.seletor_nome_produto, farmacia),
+            seletor_link: await validarAtributo(req.params.seletor_link, farmacia)
         })
         await farmacia.save()
         res.status(200).send(`Farmacia ${farmacia.nm_farmacia} atualizada`)
@@ -59,14 +61,16 @@ router.post('/excluir_farmacia/:cd_farmacia',verificarJWT,async(req, res, next)=
    } 
 });
 
-router.post('/criar_farmacia/:nm_farmacia/:seletor_preco/:seletor_nome_produto',verificarJWT,async(req, res, next)=> {
+router.post('/criar_farmacia/:nm_farmacia/:seletor_preco/:seletor_nome_produto/:seletor_link',verificarJWT,async(req, res, next)=> {
     try 
     {
         await funcoesBanco.criarFarmacia({
             nm_farmacia: req.params.nm_farmacia,
             url: req.body.url,
+            url_puro: req.body.url_puro,
             seletor_preco: req.params.seletor_preco,
-            seletor_nome_produto: req.params.seletor_nome_produto
+            seletor_nome_produto: req.params.seletor_nome_produto,
+            seletor_link: req.params.seletor_link
         });
         res.status(200).send(`Farmacia ${req.params.nm_farmacia} criada com sucesso`)
     } 
