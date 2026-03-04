@@ -38,19 +38,17 @@ export async function trazerDados(nome, limite, farmacias, filtro) {
         const nomes = $(f.seletor_nome_produto)
         const links = $(f.seletor_link)
 
-        const max = Math.min(precos.length, nomes.length, links.length);
-        const total = Math.min(max, limite);
+        const max = Math.max(precos.length, nomes.length, links.length);
         
-        for (let i = 0; i < total; i++) {
+        for (let i = 0; i < max; i++) {
 
           let nome_atual = nomes.eq(i).text()
           let preco_atual = precos.eq(i).text()
           let link_atual = links.eq(i).attr('href')
-
+          
           if (link_atual && !link_atual.startsWith('http')) {
             link_atual = f.url_puro + link_atual;
           }
-          
           resultado.push({
             link: link_atual,
             farmacia: f.nm_farmacia,
